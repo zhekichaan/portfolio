@@ -32,7 +32,7 @@
       </nav>
     </header>
     <main class="section-container">
-      <section id="home section-container" class="">
+      <section id="home section" class="">
         <h1 class="section-title">Introduction</h1>
         <div class="intro-container">
           <img src="./imgs/side.jpeg" alt="" class="intro-image" />
@@ -59,19 +59,22 @@
             </button>
           </div>
         </div>
-
         <h2>My Favorite Project</h2>
         <div class="favorite-container">
           <a
             href="https://github.com/Maksim-Yaroschuk/cinematics-filmotekav2.0"
           >
-            <img class="favorite-img" src="./imgs/filmoteka.png" alt="" />
+            <img
+              class="favorite-img"
+              src="./imgs/projects/filmoteka.png"
+              alt=""
+            />
           </a>
           <div class="favorite-info">
             <div class="favorite-icons">
-              <div><img src="./imgs/html.png" alt="" /></div>
-              <div><img src="./imgs/js.png" alt="" /></div>
-              <div><img src="./imgs/sass.png" alt="" /></div>
+              <div><img src="./imgs/icons/html.png" alt="" /></div>
+              <div><img src="./imgs/icons/js.png" alt="" /></div>
+              <div><img src="./imgs/icons/sass.png" alt="" /></div>
             </div>
             <h3 class="favorite-name">Cinematics Filmoteka</h3>
             <button
@@ -83,13 +86,10 @@
           </div>
         </div>
       </section>
-      <section id="about section-container" class="selected">
+      <section id="about section" class="">
         <h1 class="section-title">About</h1>
-        <p class="quote">
-          "The only way to do great work is to love what you do." - Steve Jobs
-        </p>
-        <div>
-          <h2>Professional Background</h2>
+        <div class="background">
+          <h2 class="background-title">Professional Background</h2>
           <p>
             I'm a seasoned Web Developer with over 2 years of experience in the
             industry. My journey in web development began when I built my first
@@ -102,10 +102,10 @@
             and emerging technologies.
           </p>
         </div>
-        <div>
-          <h2>Key Skills</h2>
-          <ul>
-            <li>
+        <div class="skills">
+          <h2 class="skills-title">Key Skills</h2>
+          <ul class="skills-list">
+            <li class="skills-item">
               <p>
                 <span>Frontend Development:</span> Proficient in HTML5, CSS3,
                 and JavaScript (ES6+). Experienced in building responsive,
@@ -113,7 +113,7 @@
                 React.js, Vue.js, and jQuery.
               </p>
             </li>
-            <li>
+            <li class="skills-item">
               <p>
                 <span>Backend Development:</span> Skilled in server-side
                 technologies such as Node.js, Express.js, and Python/Django.
@@ -121,35 +121,35 @@
                 integrations.
               </p>
             </li>
-            <li>
+            <li class="skills-item">
               <p>
                 <span>Database Management:</span> Experienced in working with
                 both relational databases (e.g., PostgreSQL, MySQL) and NoSQL
                 databases (e.g., MongoDB, CouchDB).
               </p>
             </li>
-            <li>
+            <li class="skills-item">
               <p>
                 <span>DevOps and Tooling:</span> Familiar with version control
                 systems (Git), build automation (Webpack, Gulp), and deployment
                 platforms (Heroku, AWS).
               </p>
             </li>
-            <li>
+            <li class="skills-item">
               <p>
                 <span>Agile Methodology:</span> Adept at collaborating in Agile
                 environments, participating in daily standups, sprint planning,
                 and continuously delivering value.
               </p>
             </li>
-            <li>
+            <li class="skills-item">
               <p>
                 <span>Problem-Solving:</span> Analytical mindset with a keen eye
                 for detail, able to break down complex problems and devise
                 efficient, creative solutions.
               </p>
             </li>
-            <li>
+            <li class="skills-item">
               <p>
                 <span>Communication:</span> Excellent written and verbal
                 communication skills, enabling seamless collaboration with
@@ -158,16 +158,16 @@
             </li>
           </ul>
         </div>
-        <div>
-          <h2>Experience</h2>
-          <ul>
-            <li>
-              <h3>GoIT Full-Stack Bootcamp</h3>
-              <p>
+        <div class="experience">
+          <h2 class="experience-title">Experience</h2>
+          <ul class="experience-list">
+            <li class="experience-item">
+              <h3 class="experience-name">GoIT Full-Stack Bootcamp</h3>
+              <p class="experience-date">
                 Full-Stack Web Developer <br />
                 Feb 2022 - Dec 2022
               </p>
-              <p>
+              <p class="experience-description">
                 My journey in web development began when I joined the GoIT
                 program, where I had the opportunity to specialize in building
                 modern, responsive web applications. During this time, I delved
@@ -181,13 +181,13 @@
                 timelines.
               </p>
             </li>
-            <li>
-              <h3>Seneca Polytechnic</h3>
-              <p>
+            <li class="experience-item">
+              <h3 class="experience-name">Seneca Polytechnic</h3>
+              <p class="experience-date">
                 Diploma of Education, Computer Programming <br />
                 May 2024 - 2026
               </p>
-              <p>
+              <p class="experience-description">
                 My time at Seneca Polytechnic was a formative experience that
                 laid the groundwork for my career in web development. While
                 pursuing my Diploma in Computer Programming, I gained a strong
@@ -200,216 +200,299 @@
                 continue expanding my expertise.
               </p>
             </li>
-            <li>
-              <h3>Freelance Web Developer</h3>
-              <p>2022 - Present</p>
+            <li class="experience-item">
+              <h3 class="experience-name">Freelance Web Developer</h3>
+              <p class="experience-date">2022 - Present</p>
               <p>
                 In addition to my formal training, I've had the pleasure of
                 working as a freelance web developer. This has allowed me to
-                tackle a wide range of projects, from building e-commerce
-                platforms to developing custom content management systems.
-                Through these experiences, I've refined my ability to
-                problem-solve, deliver efficient solutions, and collaborate
-                effectively with clients and cross-functional teams.
+                tackle a wide range of projects, fr
+                class="experience-description"om building e-commerce platforms
+                to developing custom content management systems. Through these
+                experiences, I've refined my ability to problem-solve, deliver
+                efficient solutions, and collaborate effectively with clients
+                and cross-functional teams.
               </p>
             </li>
           </ul>
         </div>
-        <div>
-          <h2>My Tech Stack</h2>
-          <div>
-            <div>
-              <img src="" alt="" />
-              <p></p>
+        <div class="tech">
+          <h2 class="tech-title">My Tech Stack</h2>
+          <div class="tech-list">
+            <div class="tech-item">
+              <img src="./imgs/icons/html.png" alt="" />
+              <p>HTML5</p>
             </div>
-            <div>
-              <img src="" alt="" />
-              <p></p>
+            <div class="tech-item">
+              <img src="./imgs/icons/css.png" alt="" />
+              <p>CSS3</p>
             </div>
-            <div>
-              <img src="" alt="" />
-              <p></p>
+            <div class="tech-item">
+              <img src="./imgs/icons/js.png" alt="" />
+              <p>JavaScript</p>
             </div>
-            <div>
-              <img src="" alt="" />
-              <p></p>
+            <div class="tech-item">
+              <img src="./imgs/icons/ts.png" alt="" />
+              <p>TypeScript</p>
             </div>
-            <div>
-              <img src="" alt="" />
-              <p></p>
+            <div class="tech-item">
+              <img src="./imgs/icons/react.png" alt="" />
+              <p>React JS</p>
             </div>
-            <div>
-              <img src="" alt="" />
-              <p></p>
+            <div class="tech-item">
+              <img src="./imgs/icons/node.png" alt="" />
+              <p>Node JS</p>
             </div>
-            <div>
-              <img src="" alt="" />
-              <p></p>
+            <div class="tech-item">
+              <img src="./imgs/icons/next.png" alt="" />
+              <p>Next JS</p>
             </div>
-            <div>
-              <img src="" alt="" />
-              <p></p>
+            <div class="tech-item">
+              <img src="./imgs/icons/tailwind.png" alt="" />
+              <p>Tailwind CSS</p>
             </div>
-            <div>
-              <img src="" alt="" />
-              <p></p>
+            <div class="tech-item">
+              <img src="./imgs/icons/sass.png" alt="" />
+              <p>Sass</p>
             </div>
-            <div>
-              <img src="" alt="" />
-              <p></p>
+            <div class="tech-item">
+              <img src="./imgs/icons/mongo.png" alt="" />
+              <p>MongoDB</p>
             </div>
           </div>
         </div>
       </section>
-      <section id="projects section">
+      <section id="projects section" class="selected">
         <h1 class="section-title">Projects</h1>
-        <ul>
-          <li>
-            <div>
-              <img src="" alt="" />
-              <ul></ul>
+        <ul class="projects-list">
+          <li class="projects-card">
+            <div class="card-top">
+              <img
+                src="./imgs/projects/filmoteka.png"
+                class="card-image"
+                alt=""
+              />
+              <div>
+                <img src="./imgs/icons/html.png" alt="" />
+                <img src="./imgs/icons/sass.png" alt="" />
+                <img src="./imgs/icons/js.png" alt="" />
+              </div>
             </div>
-            <div>
-              <h2>Title</h2>
-              <p>Description</p>
-              <a src="" class="button">Open In Browser</a>
-              <a src="" class="button">Source Code</a>
-            </div>
-          </li>
-          <li>
-            <div>
-              <img src="" alt="" />
-              <ul></ul>
-            </div>
-            <div>
-              <h2>Title</h2>
-              <p>Description</p>
-              <a src="" class="button">Open In Browser</a>
-              <a src="" class="button">Source Code</a>
-            </div>
-          </li>
-
-          <li>
-            <div>
-              <img src="" alt="" />
-              <ul></ul>
-            </div>
-            <div>
-              <h2>Title</h2>
-              <p>Description</p>
-              <a src="" class="button">Open In Browser</a>
-              <a src="" class="button">Source Code</a>
+            <div class="card-bottom">
+              <h2 class="card-title">Cinematics Filmoteka</h2>
+              <p class="card-description">
+                Cinematics Filmoteka is a dynamic film discovery site offering
+                users an organized and engaging way to explore movies. With an
+                extensive library of popular titles and a sleek, cinematic
+                aesthetic, the site is tailored to movie enthusiasts looking to
+                discover and track films.
+              </p>
+              <div class="card-buttons">
+                <a href="" class="button">Open In Browser</a>
+                <a href="" class="button">Source Code</a>
+              </div>
             </div>
           </li>
-          <li>
-            <div>
-              <img src="" alt="" />
-              <ul></ul>
+          <li class="projects-card">
+            <div class="card-top">
+              <img
+                src="./imgs/projects/jdm-garage.png"
+                class="card-image"
+                alt=""
+              />
+              <div>
+                <img src="./imgs/icons/html.png" alt="" />
+                <img src="./imgs/icons/tailwind.png" alt="" />
+                <img src="./imgs/icons/ts.png" alt="" />
+                <img src="./imgs/icons/next.png" alt="" />
+                <img src="./imgs/icons/node.png" alt="" />
+                <img src="./imgs/icons/mongo.png" alt="" />
+              </div>
             </div>
-            <div>
-              <h2>Title</h2>
-              <p>Description</p>
-              <a src="" class="button">Open In Browser</a>
-              <a src="" class="button">Source Code</a>
+            <div class="card-bottom">
+              <h2 class="card-title">JDM Garage (Under Construction)</h2>
+              <p class="card-description">
+                JDM Garage is designed as a go-to site for enthusiasts of
+                Japanese Domestic Market (JDM) cars. It offers a comprehensive
+                collection of information on JDM models, parts, and accessories,
+                fostering a community space for fans of Japanese automotive
+                culture.
+              </p>
+              <div class="card-buttons">
+                <a href="" class="button">Open In Browser</a>
+                <a href="" class="button">Source Code</a>
+              </div>
+            </div>
+          </li>
+          <li class="projects-card">
+            <div class="card-top">
+              <img
+                src="./imgs/projects/slimmom.png"
+                class="card-image"
+                alt=""
+              />
+              <div>
+                <img src="./imgs/icons/html.png" alt="" />
+                <img src="./imgs/icons/sass.png" alt="" />
+                <img src="./imgs/icons/js.png" alt="" />
+                <img src="./imgs/icons/node.png" alt="" />
+                <img src="./imgs/icons/mongo.png" alt="" />
+              </div>
+            </div>
+            <div class="card-bottom">
+              <h2 class="card-title">SlimMom</h2>
+              <p class="card-description">
+                SlimMom is a lifestyle and wellness website focused on
+                supporting health goals with an accessible and clean layout.
+                With features for tracking progress and curated wellness tips,
+                the site encourages users on their health journey. Its
+                minimalist design keeps the focus on functionality, making
+                health management approachable and user-friendly.
+              </p>
+              <div class="card-buttons">
+                <a href="" class="button">Open In Browser</a>
+                <a href="" class="button">Source Code</a>
+              </div>
+            </div>
+          </li>
+          <li class="projects-card">
+            <div class="card-top">
+              <img
+                src="./imgs/projects/ecotravel.png"
+                class="card-image"
+                alt=""
+              />
+              <div>
+                <img src="./imgs/icons/html.png" alt="" />
+                <img src="./imgs/icons/tailwind.png" alt="" />
+                <img src="./imgs/icons/js.png" alt="" />
+              </div>
+            </div>
+            <div class="card-bottom">
+              <h2 class="card-title">EcoTravel</h2>
+              <p class="card-description">
+                Eco Travel serves as a platform dedicated to promoting
+                sustainable travel practices. The website provides valuable
+                resources and guides for eco-conscious travelers, emphasizing
+                responsible exploration and environmental awareness. The design
+                features a nature-inspired theme, aligning with the site’s
+                mission to encourage mindful travel.
+              </p>
+              <div class="card-buttons">
+                <a href="" class="button">Open In Browser</a>
+                <a href="" class="button">Source Code</a>
+              </div>
             </div>
           </li>
         </ul>
       </section>
       <section id="resume section">
         <h1 class="section-title">Resume</h1>
-        <iframe src="" frameborder="0"></iframe>
-        <button></button>
+        <iframe
+          src="./other/resume-web.pdf"
+          class="resume-frame"
+          frameborder="0"
+        ></iframe>
+        <a href="./other/resume-web.pdf" class="button" download
+          >Download Resume</a
+        >
       </section>
       <section id="contact section">
         <h1 class="section-title">Contact</h1>
-        <form id="contactForm" onsubmit="handleSubmit(event)" novalidate>
-          <div class="form-group">
-            <label for="firstName">First Name *</label>
-            <input
-              type="text"
-              id="firstName"
-              name="firstName"
-              required
-              minlength="2"
-              pattern="[A-Za-z]+"
-              placeholder="Enter your first name"
-              class="form-control"
-            />
-            <span class="error" id="firstNameError"></span>
-          </div>
+        <div class="form-container">
+          <form
+            id="contactForm"
+            class="contact-form"
+            onsubmit="handleSubmit(event)"
+            validate
+          >
+            <div class="form-group">
+              <label for="firstName">First Name *</label>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                required
+                minlength="2"
+                pattern="[A-Za-z]+"
+                placeholder="Enter your first name"
+                class="form-input"
+              />
+            </div>
 
-          <div class="form-group">
-            <label for="lastName">Last Name *</label>
-            <input
-              type="text"
-              id="lastName"
-              name="lastName"
-              required
-              minlength="2"
-              pattern="[A-Za-z]+"
-              placeholder="Enter your last name"
-              class="form-control"
-            />
-            <span class="error" id="lastNameError"></span>
-          </div>
+            <div class="form-group">
+              <label for="lastName">Last Name *</label>
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                required
+                minlength="2"
+                pattern="[A-Za-z]+"
+                placeholder="Enter your last name"
+                class="form-input"
+              />
+            </div>
 
-          <div class="form-group">
-            <label for="email">Email *</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              placeholder="Enter your email"
-              class="form-control"
-            />
-            <span class="error" id="emailError"></span>
-          </div>
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Enter your email"
+                class="form-input"
+              />
+            </div>
 
-          <div class="form-group">
-            <label for="company">Company</label>
-            <input
-              type="text"
-              id="company"
-              name="company"
-              placeholder="Enter your company name"
-              class="form-control"
-            />
-            <span class="error" id="companyError"></span>
-          </div>
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input
+                type="text"
+                id="company"
+                name="company"
+                placeholder="Enter your company name"
+                class="form-input"
+              />
+            </div>
 
-          <div class="form-group">
-            <label for="message">Message *</label>
-            <textarea
-              id="message"
-              name="message"
-              required
-              minlength="10"
-              placeholder="Enter your message"
-              class="form-control"
-              rows="5"
-            ></textarea>
-            <span class="error" id="messageError"></span>
-          </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                minlength="10"
+                placeholder="Enter your message"
+                class="form-message"
+                rows="5"
+              ></textarea>
+            </div>
 
-          <button type="submit" class="submit-btn">Send Message</button>
-        </form>
+            <button type="submit" class="button">Send Message</button>
+          </form>
+        </div>
       </section>
       <footer class="footer">
+        <p class="quote">
+          "The only way to do great work is to love what you do." - Steve Jobs
+        </p>
         <div class="socials">
           <a href="https://github.com/zhekichaan"
-            ><img src="./imgs/github.png" alt="" /></a
+            ><img src="./imgs/icons/github.png" alt="" /></a
           ><a href="https://www.linkedin.com/in/yevhen-chernytskyi/"
-            ><img src="./imgs/linkedin.png" alt="" /></a
+            ><img src="./imgs/icons/linkedin.png" alt="" /></a
           ><a href="https://www.instagram.com/blessedminion/"
-            ><img src="./imgs/instagram-new.png" alt=""
+            ><img src="./imgs/icons/instagram.png" alt=""
           /></a>
         </div>
-        <p class="footer-copy">
+        <p class="copyright">
           &copy; 2023 Yevhen Chernytskyi. All rights reserved.
         </p>
       </footer>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
