@@ -1,3 +1,8 @@
+html {
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
+}
+
 body {
   margin: 0;
   background-color: black;
@@ -435,8 +440,7 @@ button {
   flex-direction: column;
   margin-bottom: 15px;
 }
-.form-group .form-input,
-.form-group .form-message {
+.form-group .form-input, .form-group .form-message {
   padding: 10px;
   border: 1px solid white;
   border-radius: 5px;
@@ -445,25 +449,20 @@ button {
   font-size: 16px;
   resize: none;
 }
-.form-group .form-input::placeholder,
-.form-group .form-message::placeholder {
+.form-group .form-input::placeholder, .form-group .form-message::placeholder {
   font-size: 14px;
   color: #aaa;
 }
-.form-group .form-input:focus,
-.form-group .form-message:focus {
+.form-group .form-input:focus, .form-group .form-message:focus {
   outline: none;
 }
-.form-group .form-input:valid:required,
-.form-group .form-message:valid:required {
+.form-group .form-input:valid:required, .form-group .form-message:valid:required {
   border: 1px solid greenyellow;
 }
-.form-group .form-input:invalid:focus,
-.form-group .form-message:invalid:focus {
+.form-group .form-input:invalid:focus, .form-group .form-message:invalid:focus {
   border: 1px solid rgb(255, 174, 0);
 }
-.form-group .form-input:is(:-webkit-autofill, :autofill),
-.form-group .form-message:is(:-webkit-autofill, :autofill) {
+.form-group .form-input:is(:-webkit-autofill, :autofill), .form-group .form-message:is(:-webkit-autofill, :autofill) {
   -webkit-text-fill-color: white;
   -webkit-box-shadow: 0 0 0px 1000px black inset;
 }
@@ -504,6 +503,27 @@ button {
 .popup-container {
   border: 1px solid white;
   border-radius: 15px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 /*# sourceMappingURL=styles.css.map */
