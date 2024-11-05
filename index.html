@@ -33,7 +33,7 @@
     </header>
     <main class="section-container">
       <section id="home section" class="">
-        <h1 class="section-title">Introduction</h1>
+        <h1 class="section-title">INTRODUCTION</h1>
         <div class="intro-container">
           <img src="./imgs/side.jpeg" alt="" class="intro-image" />
           <div class="text-container">
@@ -59,7 +59,7 @@
             </button>
           </div>
         </div>
-        <h2>My Favorite Project</h2>
+        <h2 class="favorite-title">My Favorite Project</h2>
         <div class="favorite-container">
           <a
             href="https://github.com/Maksim-Yaroschuk/cinematics-filmotekav2.0"
@@ -87,183 +87,211 @@
         </div>
       </section>
       <section id="about section" class="">
-        <h1 class="section-title">About</h1>
-        <div class="background">
-          <h2 class="background-title">Professional Background</h2>
-          <p>
-            I'm a seasoned Web Developer with over 2 years of experience in the
-            industry. My journey in web development began when I built my first
-            website as a teenager. Since then, I've had the opportunity to work
-            on a wide range of projects, from building responsive e-commerce
-            platforms to developing custom content management systems.
-            Throughout my career, I've honed my skills in React.js, Node.js and
-            other. I'm passionate about writing clean, maintainable code and
-            staying up-to-date with the latest web development best practices
-            and emerging technologies.
-          </p>
-        </div>
-        <div class="skills">
-          <h2 class="skills-title">Key Skills</h2>
-          <ul class="skills-list">
-            <li class="skills-item">
-              <p>
-                <span>Frontend Development:</span> Proficient in HTML5, CSS3,
-                and JavaScript (ES6+). Experienced in building responsive,
-                user-friendly interfaces using frameworks and libraries like
-                React.js, Vue.js, and jQuery.
-              </p>
-            </li>
-            <li class="skills-item">
-              <p>
-                <span>Backend Development:</span> Skilled in server-side
-                technologies such as Node.js, Express.js, and Python/Django.
-                Adept at designing and implementing RESTful APIs and database
-                integrations.
-              </p>
-            </li>
-            <li class="skills-item">
-              <p>
-                <span>Database Management:</span> Experienced in working with
-                both relational databases (e.g., PostgreSQL, MySQL) and NoSQL
-                databases (e.g., MongoDB, CouchDB).
-              </p>
-            </li>
-            <li class="skills-item">
-              <p>
-                <span>DevOps and Tooling:</span> Familiar with version control
-                systems (Git), build automation (Webpack, Gulp), and deployment
-                platforms (Heroku, AWS).
-              </p>
-            </li>
-            <li class="skills-item">
-              <p>
-                <span>Agile Methodology:</span> Adept at collaborating in Agile
-                environments, participating in daily standups, sprint planning,
-                and continuously delivering value.
-              </p>
-            </li>
-            <li class="skills-item">
-              <p>
-                <span>Problem-Solving:</span> Analytical mindset with a keen eye
-                for detail, able to break down complex problems and devise
-                efficient, creative solutions.
-              </p>
-            </li>
-            <li class="skills-item">
-              <p>
-                <span>Communication:</span> Excellent written and verbal
-                communication skills, enabling seamless collaboration with
-                cross-functional teams and clients.
-              </p>
-            </li>
-          </ul>
-        </div>
-        <div class="experience">
-          <h2 class="experience-title">Experience</h2>
-          <ul class="experience-list">
-            <li class="experience-item">
-              <h3 class="experience-name">GoIT Full-Stack Bootcamp</h3>
-              <p class="experience-date">
-                Full-Stack Web Developer <br />
-                Feb 2022 - Dec 2022
-              </p>
-              <p class="experience-description">
-                My journey in web development began when I joined the GoIT
-                program, where I had the opportunity to specialize in building
-                modern, responsive web applications. During this time, I delved
-                into React.js, honing my skills in this powerful framework. I
-                also expanded my expertise in Web Development. In addition to
-                these core web development skills, I gained valuable experience
-                in project management and team collaboration. Through hands-on
-                projects and mentorship, I learned how to effectively
-                communicate with clients, coordinate with cross-functional
-                teams, and deliver high-quality solutions within defined
-                timelines.
-              </p>
-            </li>
-            <li class="experience-item">
-              <h3 class="experience-name">Seneca Polytechnic</h3>
-              <p class="experience-date">
-                Diploma of Education, Computer Programming <br />
-                May 2024 - 2026
-              </p>
-              <p class="experience-description">
-                My time at Seneca Polytechnic was a formative experience that
-                laid the groundwork for my career in web development. While
-                pursuing my Diploma in Computer Programming, I gained a strong
-                foundation in areas such as Operating Systems, Problem Solving,
-                and additional key skills. Though I'm still early in my
-                educational journey, I'm proud of the progress I've made and the
-                solid understanding I've developed of the fundamentals of
-                software development. Seneca Polytechnic provided me with the
-                tools and knowledge to confidently take on new challenges and
-                continue expanding my expertise.
-              </p>
-            </li>
-            <li class="experience-item">
-              <h3 class="experience-name">Freelance Web Developer</h3>
-              <p class="experience-date">2022 - Present</p>
-              <p>
-                In addition to my formal training, I've had the pleasure of
-                working as a freelance web developer. This has allowed me to
-                tackle a wide range of projects, fr
-                class="experience-description"om building e-commerce platforms
-                to developing custom content management systems. Through these
-                experiences, I've refined my ability to problem-solve, deliver
-                efficient solutions, and collaborate effectively with clients
-                and cross-functional teams.
-              </p>
-            </li>
-          </ul>
-        </div>
-        <div class="tech">
-          <h2 class="tech-title">My Tech Stack</h2>
-          <div class="tech-list">
-            <div class="tech-item">
-              <img src="./imgs/icons/html.png" alt="" />
-              <p>HTML5</p>
+        <h1 class="section-title">ABOUT</h1>
+        <div class="about-container">
+          <div class="background">
+            <div onclick="handleCollapse(0)" class="title-container">
+              <h2 class="about-title">Professional Background</h2>
+              <img
+                id="arrow"
+                src="./imgs/icons/arrow.png"
+                width="20px"
+                height="20px"
+                alt="arrow icon"
+              />
             </div>
-            <div class="tech-item">
-              <img src="./imgs/icons/css.png" alt="" />
-              <p>CSS3</p>
+            <p id="collapsed-content" class="collapsed">
+              I'm a seasoned Web Developer with over 2 years of experience in
+              the industry. My journey in web development began when I built my
+              first website as a teenager. Since then, I've had the opportunity
+              to work on a wide range of projects, from building responsive
+              e-commerce platforms to developing custom content management
+              systems. Throughout my career, I've honed my skills in React.js,
+              Node.js and other. I'm passionate about writing clean,
+              maintainable code and staying up-to-date with the latest web
+              development best practices and emerging technologies.
+            </p>
+          </div>
+          <div class="skills">
+            <div onclick="handleCollapse(1)" class="title-container">
+              <h2 class="about-title">Key Skills</h2>
+              <img
+                id="arrow"
+                src="./imgs/icons/arrow.png"
+                width="20px"
+                height="20px"
+                alt="arrow icon"
+              />
             </div>
-            <div class="tech-item">
-              <img src="./imgs/icons/js.png" alt="" />
-              <p>JavaScript</p>
+            <ul id="collapsed-content" class="skills-list collapsed">
+              <li class="skills-item">
+                <p>
+                  <span>Frontend Development:</span> Proficient in HTML5, CSS3,
+                  and JavaScript (ES6+). Experienced in building responsive,
+                  user-friendly interfaces using frameworks and libraries like
+                  React.js and Next.js.
+                </p>
+              </li>
+              <li class="skills-item">
+                <p>
+                  <span>Backend Development:</span> Skilled in server-side
+                  technologies such as Node.js. Adept at designing and
+                  implementing RESTful APIs and database integrations.
+                </p>
+              </li>
+              <li class="skills-item">
+                <p>
+                  <span>Database Management:</span> Experienced in working with
+                  both relational databases (e.g., OracleSQL, MySQL) and NoSQL
+                  databases (MongoDB).
+                </p>
+              </li>
+              <li class="skills-item">
+                <p>
+                  <span>DevOps and Tooling:</span> Familiar with version control
+                  systems (Git), build automation (Webpack), and deployment
+                  platforms (Heroku).
+                </p>
+              </li>
+              <li class="skills-item">
+                <p>
+                  <span>Problem-Solving:</span> Analytical mindset with a keen
+                  eye for detail, able to break down complex problems and devise
+                  efficient, creative solutions.
+                </p>
+              </li>
+              <li class="skills-item">
+                <p>
+                  <span>Communication:</span> Excellent written and verbal
+                  communication skills, enabling seamless collaboration with
+                  cross-functional teams and clients.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="experience">
+            <div onclick="handleCollapse(2)" class="title-container">
+              <h2 class="about-title">Experience</h2>
+              <img
+                id="arrow"
+                src="./imgs/icons/arrow.png"
+                width="20px"
+                height="20px"
+                alt="arrow icon"
+              />
             </div>
-            <div class="tech-item">
-              <img src="./imgs/icons/ts.png" alt="" />
-              <p>TypeScript</p>
+            <ul id="collapsed-content" class="experience-list collapsed">
+              <li class="experience-item">
+                <h3 class="experience-name">Seneca Polytechnic</h3>
+                <div>
+                  <p class="experience-date">
+                    Diploma of Education, Computer Programming <br />
+                    <br />
+                    May 2024 - 2026
+                  </p>
+                  <p class="experience-description">
+                    At Seneca Polytechnic, I built a solid foundation in web
+                    development, focusing on Operating Systems, Problem Solving,
+                    and Database Management. This experience has equipped me
+                    with essential skills and knowledge to tackle new challenges
+                    in software development, including designing and
+                    implementing efficient database solutions and developing
+                    robust web applications.
+                  </p>
+                </div>
+              </li>
+              <li class="experience-item">
+                <h3 class="experience-name">GoIT Full-Stack Bootcamp</h3>
+                <div>
+                  <p class="experience-date">
+                    Full-Stack Web Developer <br />
+                    <br />
+                    Feb 2022 - Dec 2022
+                  </p>
+                  <p class="experience-description">
+                    My journey in web development began with the GoIT program,
+                    where I specialized in building modern, responsive web
+                    applications. I honed my skills in React.js and expanded my
+                    expertise in web development. Additionally, I gained
+                    experience in project management and team collaboration,
+                    learning to effectively communicate with clients and deliver
+                    high-quality solutions on time.
+                  </p>
+                </div>
+              </li>
+              <li class="experience-item">
+                <h3 class="experience-name">Freelance Web Developer</h3>
+                <div>
+                  <p class="experience-date">2022 - Present</p>
+                  <p>
+                    As a freelance web developer, I've worked on diverse
+                    projects, from e-commerce platforms to custom CMS. These
+                    experiences have honed my problem-solving skills and ability
+                    to deliver efficient solutions while collaborating
+                    effectively with clients and teams.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="tech">
+            <div onclick="handleCollapse(3)" class="title-container">
+              <h2 class="about-title">My Tech Stack</h2>
+              <img
+                id="arrow"
+                src="./imgs/icons/arrow.png"
+                width="20px"
+                height="20px"
+                alt="arrow icon"
+              />
             </div>
-            <div class="tech-item">
-              <img src="./imgs/icons/react.png" alt="" />
-              <p>React JS</p>
-            </div>
-            <div class="tech-item">
-              <img src="./imgs/icons/node.png" alt="" />
-              <p>Node JS</p>
-            </div>
-            <div class="tech-item">
-              <img src="./imgs/icons/next.png" alt="" />
-              <p>Next JS</p>
-            </div>
-            <div class="tech-item">
-              <img src="./imgs/icons/tailwind.png" alt="" />
-              <p>Tailwind CSS</p>
-            </div>
-            <div class="tech-item">
-              <img src="./imgs/icons/sass.png" alt="" />
-              <p>Sass</p>
-            </div>
-            <div class="tech-item">
-              <img src="./imgs/icons/mongo.png" alt="" />
-              <p>MongoDB</p>
+            <div id="collapsed-content" class="tech-list collapsed">
+              <div class="tech-item">
+                <img src="./imgs/icons/html.png" alt="" />
+                <p>HTML5</p>
+              </div>
+              <div class="tech-item">
+                <img src="./imgs/icons/css.png" alt="" />
+                <p>CSS3</p>
+              </div>
+              <div class="tech-item">
+                <img src="./imgs/icons/js.png" alt="" />
+                <p>JavaScript</p>
+              </div>
+              <div class="tech-item">
+                <img src="./imgs/icons/ts.png" alt="" />
+                <p>TypeScript</p>
+              </div>
+              <div class="tech-item">
+                <img src="./imgs/icons/react.png" alt="" />
+                <p>React JS</p>
+              </div>
+              <div class="tech-item">
+                <img src="./imgs/icons/node.png" alt="" />
+                <p>Node JS</p>
+              </div>
+              <div class="tech-item">
+                <img src="./imgs/icons/next.png" alt="" />
+                <p>Next JS</p>
+              </div>
+              <div class="tech-item">
+                <img src="./imgs/icons/tailwind.png" alt="" />
+                <p>Tailwind CSS</p>
+              </div>
+              <div class="tech-item">
+                <img src="./imgs/icons/sass.png" alt="" />
+                <p>Sass</p>
+              </div>
+              <div class="tech-item">
+                <img src="./imgs/icons/mongo.png" alt="" />
+                <p>MongoDB</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section id="projects section" class="selected">
-        <h1 class="section-title">Projects</h1>
+      <section id="projects section" class="">
+        <h1 class="section-title">PROJECTS</h1>
         <ul class="projects-list">
           <li class="projects-card">
             <div class="card-top">
@@ -386,19 +414,23 @@
           </li>
         </ul>
       </section>
-      <section id="resume section">
-        <h1 class="section-title">Resume</h1>
-        <iframe
-          src="./other/resume-web.pdf"
-          class="resume-frame"
-          frameborder="0"
-        ></iframe>
-        <a href="./other/resume-web.pdf" class="button" download
-          >Download Resume</a
-        >
+      <section id="resume section" class="selected">
+        <h1 class="section-title">RESUME</h1>
+        <div class="resume-container">
+          <button class="button" onclick="toggleResumePreview()">
+            Preview Resume
+          </button>
+          <div class="backdrop hidden" onclick="closeResumePreview(event)">
+            <img class="backdrop-image" src="./imgs/resume-web.jpg" alt="" />
+          </div>
+
+          <a href="./other/resume-web.pdf" class="button" download
+            >Download Resume
+          </a>
+        </div>
       </section>
       <section id="contact section">
-        <h1 class="section-title">Contact</h1>
+        <h1 class="section-title">CONTACT</h1>
         <div class="form-container">
           <form
             id="contactForm"

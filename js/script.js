@@ -19,6 +19,20 @@ const handleSectionChange = (sec, btn) => {
   });
 };
 
+const collapsedContentElements =
+  document.querySelectorAll("#collapsed-content");
+const arrows = document.querySelectorAll("#arrow");
+
+const handleCollapse = (content) => {
+  if (collapsedContentElements[content].classList.contains("collapsed")) {
+    collapsedContentElements[content].classList.remove("collapsed");
+    arrows[content].classList.add("rotate");
+  } else {
+    collapsedContentElements[content].classList.add("collapsed");
+    arrows[content].classList.remove("rotate");
+  }
+};
+
 const form = document.querySelector("#contactForm");
 
 // Event listener that displays a successful message when the form is submitted
@@ -47,3 +61,14 @@ form.addEventListener(
     });
   })
 );
+
+const backdrop = document.querySelector(".backdrop");
+
+function closeResumePreview(event) {
+  if (event.target.classList.contains("backdrop")) {
+    toggleResumePreview();
+  }
+}
+function toggleResumePreview() {
+  backdrop.classList.toggle("hidden");
+}
