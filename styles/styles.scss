@@ -141,11 +141,11 @@ button {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding: 25px;
   border-radius: 15px;
   max-width: 100%;
   margin: 0 auto 50px;
   max-width: 400px;
+  padding: 25px 0;
 
   & .intro-image {
     object-fit: cover;
@@ -164,6 +164,12 @@ button {
     max-width: 100%;
     line-height: 25px;
 
+    text-align: justify;
+
+    @media (min-width: 769px) {
+      text-align: left;
+    }
+
     & span {
       font-size: 20px;
       font-weight: 500;
@@ -174,9 +180,8 @@ button {
     flex-direction: row;
     gap: 30px;
     max-width: fit-content;
-  }
+    padding: 25px;
 
-  @media (min-width: 769px) {
     .intro-image {
       width: 500px;
       height: 500px;
