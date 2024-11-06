@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Metadata and linking to external resources (CSS, fonts, and JavaScript libraries) -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts for Montserrat font styling -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -10,12 +13,15 @@
       rel="stylesheet"
     />
 
+    <!-- Link to external CSS file for styles -->
     <link rel="stylesheet" href="./styles/styles.css" />
     <title>Document</title>
   </head>
   <body>
+    <!-- Header with navigation and menu icon for mobile view -->
     <header class="header">
       <nav class="nav">
+        <!-- Navigation links with onclick functions to handle section changes -->
         <a class="nav-item selected" onclick="handleSectionChange('home', 0)"
           >Home</a
         >
@@ -37,10 +43,14 @@
         onclick="handleMenuOpen()"
       />
     </header>
+
+    <!-- Main content container with different sections -->
     <main class="section-container">
+      <!-- Home Section with Introduction and Favorite Project -->
       <section id="home section" class="selected">
         <h1 class="section-title">INTRODUCTION</h1>
         <div class="intro-container">
+          <!-- Profile image and introductory text -->
           <img
             src="./imgs/side.jpeg"
             alt="A side profile picture of Yevhen Chernytskyi"
@@ -64,11 +74,15 @@
               excited to embrace new technologies that improve the web
               development landscape.
             </p>
+
+            <!-- Button to navigate to About section -->
             <button class="button" onclick="handleSectionChange('about', 1)">
               Learn More
             </button>
           </div>
         </div>
+
+        <!-- Highlighted Favorite Project -->
         <h2 class="favorite-title">My Favorite Project</h2>
         <div class="favorite-container">
           <a
@@ -80,6 +94,8 @@
               alt="Screenshot of the Cinematics Filmoteka project"
             />
           </a>
+
+          <!-- Project information and icons -->
           <div class="favorite-info">
             <div class="favorite-icons">
               <div><img src="./imgs/icons/html.png" alt="HTML5 icon" /></div>
@@ -96,10 +112,13 @@
           </div>
         </div>
       </section>
+
+      <!-- About Section with Collapsible Details on Background, Skills, Experience, and Tech Stack -->
       <section id="about section" class="">
         <h1 class="section-title">ABOUT</h1>
         <div class="about-container">
           <div class="background">
+            <!-- Professional Background (collapsible section) -->
             <div onclick="handleCollapse(0)" class="title-container">
               <h2 class="about-title">Professional Background</h2>
               <img
@@ -122,6 +141,8 @@
               development best practices and emerging technologies.
             </p>
           </div>
+
+          <!-- Skills List (collapsible section) -->
           <div class="skills">
             <div onclick="handleCollapse(1)" class="title-container">
               <h2 class="about-title">Key Skills</h2>
@@ -134,6 +155,7 @@
               />
             </div>
             <ul id="collapsed-content" class="skills-list collapsed">
+              <!-- List of skills with short descriptions -->
               <li class="skills-item">
                 <p>
                   <span>Frontend Development:</span> Proficient in HTML5, CSS3,
@@ -179,6 +201,8 @@
               </li>
             </ul>
           </div>
+
+          <!-- Experience Section with collapsible items for each experience entry -->
           <div class="experience">
             <div onclick="handleCollapse(2)" class="title-container">
               <h2 class="about-title">Experience</h2>
@@ -244,6 +268,8 @@
               </li>
             </ul>
           </div>
+
+          <!-- Technology Stack Section listing tech icons -->
           <div class="tech">
             <div onclick="handleCollapse(3)" class="title-container">
               <h2 class="about-title">My Tech Stack</h2>
@@ -300,6 +326,8 @@
           </div>
         </div>
       </section>
+
+      <!-- Projects Section with a list of project cards -->
       <section id="projects section" class="">
         <h1 class="section-title">PROJECTS</h1>
         <ul class="projects-list">
@@ -454,6 +482,8 @@
           </li>
         </ul>
       </section>
+
+      <!-- Resume Section with options to preview or download the resume -->
       <section id="resume section" class="">
         <h1 class="section-title">RESUME</h1>
         <div class="resume-container">
@@ -473,6 +503,8 @@
           </a>
         </div>
       </section>
+
+      <!-- Contact Section with a form for user input -->
       <section id="contact section">
         <h1 class="section-title">CONTACT</h1>
         <div class="form-container">
@@ -550,6 +582,8 @@
           </form>
         </div>
       </section>
+
+      <!-- Footer with quote, social links, and copyright info -->
       <footer class="footer">
         <p class="quote">
           "The only way to do great work is to love what you do." - Steve Jobs
@@ -568,6 +602,8 @@
         </p>
       </footer>
     </main>
+
+    <!-- External JavaScript and SweetAlert library for enhanced interactions -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/script.js"></script>
   </body>
