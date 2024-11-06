@@ -1,6 +1,10 @@
 const sections = document.querySelectorAll("section");
 const navButtons = document.querySelectorAll(".nav-item");
 
+const handleMenuOpen = () => {
+  document.querySelector(".nav").classList.toggle("open");
+};
+
 const handleSectionChange = (sec, btn) => {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
